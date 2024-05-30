@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #078888;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.container {
+  background: #078888;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #ffa246;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0);
+}
+
+.header-text {
+  text-shadow: #f7fafb 1px 0 5px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 10px;
+  gap: 5px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.33% - 10px);
+  min-width: 250px;
+  max-width: 400px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+button {
+  margin: 4px 2px;
+}
+
+.delete:hover {
+  background-color: #ff0000;
+}
+
+.add:hover {
+  background-color: #34bb13;
+}
+
+input,
+select {
+  padding: 6px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: initial;
+}
+
+li {
+  background-color: #aeffa1;
+}
+
+li input,
+li select {
+  margin-right: 8px;
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 5px;
+  max-width: calc(100% - 50px);
+}
+
+li input:hover {
+  border: 1px solid #4caf50;
+}
+
+li button:hover {
+  background-color: #ff3333;
+}
+
+section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+}
+
+section button {
+  background-color: #0251b4;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+section button:hover {
+  background-color: #0056b3;
+}
+
+li select {
+  padding: 6px;
+}
+
+.students,
+.subjects,
+.grades {
+  background-color: #f5dcdc;
+  flex: 1;
+  overflow-y: hidden;
+  max-height: calc(100vh - 150px);
+  max-width: calc(200vh);
+  box-shadow: 5px 7px 10px rgb(39 37 37 / 73%);
+}
+
+.grades select {
+  max-width: 120px;
+}
+
+.grades input[type="date"] {
+  max-width: 120px;
+}
+
+.grades input[type="text"] {
+  max-width: 80px;
+}
+
+@media (max-width: 1200px) {
+  section {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    flex: 1 1 100%;
+  }
+}
