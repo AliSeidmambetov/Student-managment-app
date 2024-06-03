@@ -20,7 +20,7 @@ git clone https://github.com/yourusername/stud_reg_app.git
 cd stud_reg_app
 ```
 
-### Запуск проекта:
+### Запуск проекта
 А затем запустите этот мини-проект у себя локально:
 
 ```bash
